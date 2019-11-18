@@ -51,7 +51,20 @@ margin-top: 18px;
     background-color: red;
     height: 90px;
   }
-  td{
+ table,td{
 border: red solid 25px;
-padding: 0%;
+border-spacing: 0px;
+margin-left: auto; 
+margin-right: auto;
+  }
+  h1{
+    text-align: center;
+    color: red;
+    font-family: Impact;
+  }
+  h2{
+    color: red;
+    font-family: cursive;
+    text-align: center;
+
   }

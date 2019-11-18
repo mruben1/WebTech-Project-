@@ -90,3 +90,8 @@ margin-top: 18px;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
   }
+
+  h2{
+    color: red;
+    font-family: Impact;
+  }
