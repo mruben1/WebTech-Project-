@@ -1,0 +1,92 @@
+nav {    
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 0;
+    overflow: hidden;
+    background-color: red;
+    height: 90px;
+    
+  }
+  
+  li {
+    font-family: sans-serif;
+  float: left;
+font-size: 21px;
+position: relative;
+margin-top: 18px;
+}
+  
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding-left:  15px;
+    padding-right:  15px;
+    padding-top:  10px;
+    padding-bottom:  10px;
+    text-decoration: none;
+  }
+  
+  
+  li a:hover {
+    background-color: silver;
+    color: red ;
+    border-radius: 100%; 
+  }
+  #logo{
+      margin-left: auto;
+      margin-right:auto ;
+      display: block;
+  }
+  body{
+      background-color: white;
+  }
+  .sidenav {
+    height: auto; /* Full-height: remove this if you want "auto" height */
+    width: 400px; /* Set the width of the sidebar */
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 330px; /* Stay at the top */
+    right: 0;
+    background-color: white; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: red;
+  }
+  footer {    
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 0;
+    overflow: hidden;
+    background-color: red;
+    height: 90px;
+    
+  }
+  .text{
+      width: 800px;
+  }
+  #map{
+    height: auto; /* Full-height: remove this if you want "auto" height */
+    width: auto; /* Set the width of the sidebar */
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 850px; /* Stay at the top */
+    right: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
