@@ -1,39 +1,39 @@
 nav {    
-    list-style-type: none;
-    margin-left: auto;
-    margin-right: auto; 
-    padding: 0;
-    overflow: hidden;
-    background-color: red;
-    height: 90px;
-    
-  }
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: auto; 
+  padding: 0;
+  overflow: hidden;
+  background-color: red;
+  height: 90px;
   
-  li {
-    font-family: sans-serif;
-  float: left;
+}
+
+li {
+  font-family: sans-serif;
+float: left;
 font-size: 21px;
 position: relative;
 margin-top: 18px;
 }
-  
-  li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding-left:  15px;
-    padding-right:  15px;
-    padding-top:  10px;
-    padding-bottom:  10px;
-    text-decoration: none;
-  }
-  
-  
-  li a:hover {
-    background-color: silver;
-    color: red ;
-    border-radius: 100%; 
-  }
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding-left:  15px;
+  padding-right:  15px;
+  padding-top:  10px;
+  padding-bottom:  10px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: silver;
+  color: red ;
+  border-radius: 100%; 
+}
   #logo{
       margin-left: auto;
       margin-right:auto ;
