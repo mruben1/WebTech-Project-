@@ -7,6 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cars-Pets Car Review</title>
     <link href="sedans.css" rel="stylesheet" type="text/css">
+    <script>
+    
+function colo(){
+ let t = document.getElementById("tab");
+ 
+ t.style.borderColor = "orange";
+
+}
+    
+    </script>
 
 </head>
 
@@ -22,17 +32,22 @@
             <li><a href="Sedans.htm">Mid-Range Luxury Sedans</a></li>
             <li><a href="SUV.htm">Mid-Range Luxury SUV</a></li>
             <li><a href="coupe.htm">Mid-Range Luxury Coupe</a></li>
-            <li><a href="Reviews.htm">Personal Reviews</a></li>
+            <li><a href="exotics.htm">Luxury Mid-Range Exotics</a></li>
+            <li><a href="slideshow.html">SlideShow</a></li>
             <li><a href="ContactUs.htm">Contact Us</a></li>
 
         
     </nav>
     <h1>Mid-Range Luxury Sedans</h1>
+<!-- Here I allow the user to change the style of the border by clicking here of the table if he doesn't like red, I gave them orange option.  -->
+    <h1 onclick="colo()">Don't Like red? click here to change to orange!</h1>
 
     <h2>Car Comparison</h2>
-    <table>
+    <!-- here I am using a table -->
+    <table id="tab">
+    
         <tr>
-            <td>BMW 330i <img src="images/bmw 3 series.jpg" alt="BMW 3" title="BMW 3 Series"
+            <td >BMW 330i <img src="images/bmw 3 series.jpg" alt="BMW 3" title="BMW 3 Series"
                     width="250px"><br>Features:<br>
                 Engine: 2.0T I4 <br>
                 Horsepower: 255<br>
@@ -91,7 +106,7 @@
         </tr>
         <tr>
             <td>BMW 740i <img src="images/bmw 7.jpg" alt="bmw7" title="BMW 7 Series" width="250px"><br> Features:<br>
-                Engine: 3.0 TwinTurbo <br>
+                Engine: 3.0 TwinTurbo I6 <br>
                 Horsepower: 335<br>
                 Torque: 330b/ft<br>
                 0-60MPH: 5.3sec<br>
@@ -159,6 +174,7 @@
         <ul></ul>
         <li><a href="sitemap.htm">Sitemap</a></li>
         <li><a href="ContactUs.htm">Contact us</a></li>
+        <li><a href="credits.htm">Credits</a></li>
     </footer>
 
 

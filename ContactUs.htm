@@ -5,9 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Pets Car Review</title>
     <link href="contactus.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+// with this funtion I am validating the form. The User cannot continue without placing his/her first and last name
+function f(){
+    let myform = document.getElementById("myForm");
+    if (myform.firstname.value == "" || myform.lastname.value == ""){
 
+        (alert("Please fill out both your first name and last name to continue."))
+    }
+    return false;
+}
+// Here is my JQuery
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h1").css("color", "purple");
+  });
+});
+
+
+
+</script>
 </head>
 
 <body>
@@ -21,14 +41,18 @@
         <li><a href="Sedans.htm">Mid-Range Luxury Sedans</a></li>
         <li><a href="SUV.htm">Mid-Range Luxury SUV</a></li>
         <li><a href="coupe.htm">Mid-Range Luxury Coupe</a></li>
-        <li><a href="Reviews.htm">Personal Reviews</a></li>
+        <li><a href="exotics.htm">Luxury Mid-Range Exotics</a></li>
+        <li><a href="slideshow.html">SlideShow</a></li>
         <li><a href="ContactUs.htm">Contact Us</a></li>
-        </ul>
+
     </nav>
 
-    <form method="POST" action="submit">
-        <p> Last Name: <input type="text" name="last-name" placeholder="Last name">
-            First Name: <input type="text" name="first-name" placeholder="First Name">
+    <h1>Contact Us!</h1>
+
+    <!-- here i am using a form -->
+    <form method="POST" id="myForm" action="submit">
+        <p> Last Name: <input type="text" name="lastname" placeholder="Last name">
+            First Name: <input type="text" name="firstname" placeholder="First Name">
         </p>
 
         <p>
@@ -77,7 +101,7 @@
 
 
 
-        <input type="submit" value="submit" />
+       <button onclick="return f()">Submit</button>
         <input type="reset" value="clear">
     </form>
     <hr>
@@ -88,6 +112,7 @@
         <ul></ul>
         <li><a href="sitemap.htm">Sitemap</a></li>
         <li><a href="ContactUs.htm">Contact us</a></li>
+        <li><a href="credits.htm">Credits</a></li>
     </footer>
 
 

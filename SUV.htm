@@ -8,6 +8,33 @@
         <title>Document</title>
         <link href="suv.css" rel="stylesheet" type="text/css">
 
+        <script>
+        let p = 320;
+        let i = 0; 
+        const list = ["Mid-Range Luxry SUVS","German Cars are best","they are great"];
+        
+
+function doScroll(){
+    let l = document.getElementById("msg");
+    l.innerHTML = list[i];
+        l.style.left = p + "px";
+        if(p > 700){
+            p = 320;
+            i++;
+            if (i == list.length){
+                i = 0;
+            }
+        } else {
+            p = p + 1; 
+        }
+        setTimeout("doScroll()", 8)
+        
+        
+        
+}
+        
+        </script>
+
 </head>
 
 <body>
@@ -24,18 +51,148 @@
                         <li><a href="Sedans.htm">Mid-Range Luxury Sedans</a></li>
                         <li><a href="SUV.htm">Mid-Range Luxury SUV</a></li>
                         <li><a href="coupe.htm">Mid-Range Luxury Coupe</a></li>
-                        <li><a href="Reviews.htm">Personal Reviews</a></li>
+                        <li><a href="exotics.htm">Luxury Mid-Range Exotics</a></li>
+                        <li><a href="slideshow.html">SlideShow</a></li>
                         <li><a href="ContactUs.htm">Contact Us</a></li>
                 
         </nav>
+        <!-- Here I tried to get the animation  text to move from one side to another but instead I got the text to change.  -->
+<body onload="doScroll()">
+        <h1 id="msg">This text moves</h1>
         <h2>Car Comparison</h2>
-        <h1>Mid-Range Luxury SUVS</h1>
+            <!-- here I am using a table -->
 
+        <table>
+                <tr>
+                    <td>BMW X1 <img src="images/bmw x1.jpg" alt="BMW x1" title="BMW x1"
+                            width="250px"><br>Features:<br>
+                        Engine: 2.0T I4 <br>
+                        Horsepower: 228<br>
+                        Torque: 258lb/ft<br>
+                        Driveterrain: RWD<br>
+                        Comfortably fits: 5<br>
+                        0-60MPH: 6.3 sec <br>
+                        Price: $3500
+                    </td>
+                    <td>Audi Q3 45TFSI <img src="images/audi Q3.jpg" alt="Audiq3" title="Audi q3" width="250px"> <br>
+                        Features:<br>
+                        Engine: 2.0T I4 <br>
+                        Horsepower: 228<br>
+                        Torque: 258lb/ft<br>
+                        Driveterrain: AWD<br>
+                        0-60: 7.0sec <br>
+                        Comfortably fits: 5<br>
+                        Price: $34,700</td>
+                    <td> Mercedes Benz GLA 250<img src="images/mb gla.jpg" alt="MBgla" title="Mercedez-Benz gla" width="250px">
+                        <br>Features: <br>
+                        Engine: 2.0T I4 <br>
+                        Horsepower: 208<br>
+                        Torque: 258lb/ft<br>
+                        0-60MPH:7.2sec<br>
+                        Driveterrain: RWD<br>
+                        Comfortably fits: 4<br>
+                        Price: $34,250</td>
+                </tr>
+                <tr>
+                    <td>BMW X3 <img src="images/bmw x3.jpg" alt="BmWx3" title="BMW x3 " width="250px"> <br>Features: <br>
+                        Engine: 2.0 TwinTurbo I4<br>
+                        Horsepower: 248<br>
+                        Torque: 258lb/ft<br>
+                        0-60MPH: 4.6sec <br>
+                        Driveterrain: RWD<br>
+                        Comfortably fits: 5<br>
+                        Price: $42,000</td>
+                    <td> Audi Q5 45TFSI <img src="images/audi q5.jpg" alt="Audiq5" title="Audi q5" width="250px"><br> Features:
+                        <br>
+                        Engine: 2.0T I4 <br>
+                        Horsepower: 248<br>
+                        Torque: 258lb/ft<br>
+                        0-60MPH: 5.9sec<br>
+                        Driveterrain: AWD<br>
+                        Comfortably fits: 5<br>
+                        Price: $43,500</td>
+                    <td> Mercedes-Benz GLC 300 <img src="images/mB glc.jpg" alt="BM Eclass" title="Mercedes Benz E class"
+                            width="250px"> <br>Features: <br>
+                        Engine: 3.0 Biturbo I6 <br>
+                        Horsepower: 362<br>
+                        Torque: 369b/ft<br>
+                        0-60MPH: 5sec<br>
+                        Driveterrain: AWD<br>
+                        Comfortably fits: 5<br>
+                        Price: $61,500</td>
+                </tr>
+                <tr>
+                    <td>BMW X5 <img src="images/bmw x5.jpg" alt="bmwx5" title="BMW x5 Series" width="250px"><br> Features:<br>
+                        Engine: 3.0 TwinTurbo I6 <br>
+                        Horsepower: 335<br>
+                        Torque: 330b/ft<br>
+                        0-60MPH: 5.2sec<br>
+                        Driveterrain: RWD<br>
+                        Comfortably fits: 5<br>
+                        Price: $59,000
+                    </td>
+                    <td> Audi Q7 55TFSI <img src="images/Audi q7.jpg" alt="Audi q7" title="Audi q7" width="250px"> <br>
+                        Features: <Br>
+                        Engine: 3.0T V6 <br>
+                        Horsepower: 329<br>
+                        Torque: 325b/ft<br>
+                        0-60MPH: 5.7sec<br>
+                        Driveterrain: AWD<br>
+                        Comfortably fits: 5/7<br>
+                        Price: $59,950</td>
+                    <td>Mercedes Benz GLE450 <img src="images/mb gle.jpg" alt="Mercedes gle" title="Mercedes-Benz gle"
+                            width="250px"><br> Features:<br>
+                        Engine: 3.0 turbo I6<br>
+                        Horsepower: 362<br>
+                        Torque: 369b/ft<br>
+                        0-60MPH: 5.5sec<br>
+                        Driveterrain: AWD<br>
+                        Comfortably fits: 5<br>
+                        Price: $61,150</td>
+                </tr>
+                <tr>
+                    <td>BMW X6 <img src="images/bmw x6.jpg" alt="BMW X6" title="BMW X6" width="250px"><br> Features:<br>
+                        Engine: 3.0 TwinTurbo I6 <br>
+                        Horsepower: 335<br>
+                        Torque: 330b/ft<br>
+                        0-60MPH: 5.2sec<br>
+                        Driveterrain: RWD<br>
+                        Comfortably fits: 5<br>
+                        Price: $64,300 </td>
+                    <td> Audi Q8 55TFSI <img src="images/audi q8.jpg" alt="audi Q8" title="Audi Q8" width="250px"><br>
+                        Features:<br>
+                        Engine: 3.0T V6 <br>
+                        Horsepower: 335<br>
+                        Torque: 369lb/ft<br>
+                        0-60MPH: 5.6sec<br>
+                        Driveterrain: AWD<br>
+                        Comfortably fits: 5<br>
+                        Price: $68,200</td>
+                    <td> Mercedes Benz AMG GLE43 Coupe <img src="images/bm gle coupe.jpg" alt="MB GLE Coupe" title="Mercedes Benz GLE Coupe"
+                            width="250px"><br> Features:<br>
+                            Engine: 3.0 Biturbo V6<br>
+                            Horsepower: 385<br>
+                            Torque: 384b/ft<br>
+                            0-60MPH: 5.6sec<br>
+                            Driveterrain: RWD<br>
+                            Comfortably fits: 5<br>
+                            Price: $71,350</td>
+                </tr>
+        
+        
+        
+        
+        
+        
+        
+            </table>
+</body>
         <footer>
 
                 <ul></ul>
                 <li><a href="sitemap.htm">Sitemap</a></li>
                 <li><a href="ContactUs.htm">Contact us</a></li>
+                <li><a href="credits.htm">Credits</a></li>
         </footer>
 
 </body>

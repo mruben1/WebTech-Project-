@@ -6,7 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pet's Car Review</title>
     <link href="in.css" rel="stylesheet" type="text/css">
+<script>
 
+function germany(){
+
+    let g = document.getElementById("change");
+    g.innerHTML = "Germans make the best cars!"
+}
+//the following to functions change the picture with onmouseover and then changes it back with onmouseout
+function pictue(){
+let f = document.getElementById("foto");
+f.src = "images/bmw inout.jpg"
+
+}
+
+function yes(){
+    let f = document.getElementById("foto");
+    f.src = "images/bmw 3 series.jpg"
+}
+</script>
 </head>
 <body>
 <header>      <p> <a href="http://petscarreviews.com/"><img src="images/Petslogo.png" alt="PetsLogo" id="logo" title="PetsLogo"></a></p>
@@ -17,7 +35,8 @@
                 <li><a href="Sedans.htm">Mid-Range Luxury Sedans</a></li>
                 <li><a href="SUV.htm">Mid-Range Luxury SUV</a></li>
                 <li><a href="coupe.htm">Mid-Range Luxury Coupe</a></li>
-                <li><a href="Reviews.htm">Personal Reviews</a></li>
+                <li><a href="exotics.htm">Luxury Mid-Range Exotics</a></li>
+                <li><a href="slideshow.html">SlideShow</a></li>
                 <li><a href="ContactUs.htm">Contact Us</a></li>
             
         
@@ -27,7 +46,7 @@
 <article>
     <h2>See How the ALL-NEW BMW 3 series is turning heads instantly</h2>
 
-    <img src="images/bmw 3 series.jpg" width="800px" alt="BMW 3" title="BMW 3 Series">
+    <img id="foto" onmouseover="pictue()" onmouseout="yes()" src="images/bmw 3 series.jpg" width="800px" alt="BMW 3" title="BMW 3 Series">
 <p class="text">The All-New and fully redesigned BMW 3 Series launched at the beginning of this year, and guess what, Its awesomely beautiful.
     While the new headlight design gives the car a different, more aggressive look that the one before, it is technology such as its new grill, which opens and closes due to the temperature of the car in order to recieve air when needed, that puts this car on another level, and on par with its main competition, Audi's A4 and Mercedes Benz's C-Class. 
 </p>
@@ -41,11 +60,14 @@
 
     <p> <h2>The F1 Theme song is in its own class..</h2>   <iframe width="20%" height="70px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/416437488&color=%234c4248&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 </p>
+
+<!-- this text changes when the user clicks on the text. it says click here to entice the user to click -->
+<h2 id="change" onclick="germany()">Click Here to see Who makes the best Cars!</h2>
 </article>
 
-
+<!-- Here is my map with clickable links on munich (BMW, Audi and in Ingolstadt for Mercedes) -->
 <div id="map">
-    <h2>Map of Mercedes Benz, BMW, and Audi HeadQuarters</h2>
+    <h2 >Map of Mercedes Benz, BMW, and Audi HeadQuarters</h2>
 
         <map name="germany">
                 <area shape="rect" coords="261,301,270,350" href="https://en.wikipedia.org/wiki/BMW_Headquarters" alt="BMW HEadquarters"
@@ -86,6 +108,7 @@
 <ul></ul>
         <li><a href="sitemap.htm">Sitemap</a></li>
         <li><a href="ContactUs.htm">Contact us</a></li>
+        <li><a href="credits.htm">Credits</a></li>
 </footer>
 
 </body>

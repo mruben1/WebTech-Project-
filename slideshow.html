@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coupes-PetsCarReviews</title>
+    <link href="coupes.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+const slides = ["images/MB e.jpg", "images/bmw 3 series.jpg","images/bmw 8.jpg","images/Mb c300.jpg","images/mB glc.jpg","images/mb gla.jpg","images/bmw i8.jpg","images/bmw 7.jpg", "images/Audi A6.jpg","images/Audi a5.jpg","images/audi r8.jpg","images/audi Q3.jpg","images/audi tt.jpg","images/bmw 2.jpg","images/bmw i3.jpg","images/mb gle.jpg","images/mb amg.jpg", "images/bmw z4.jpg"]
+let i=0
+
+
+function slideshow(){
+    im = document.getElementById("imag");
+    if (i == slides.length) {
+        i = 0
+      }
+      im.src = slides[i];
+
+     i++ 
+      
+
+
+    setTimeout("slideshow()", 1500)
+
+}
+</script>
+</head>
+<body>
+    
+        <header>      <p> <a href="http://petscarreviews.com/"><img id="logo" src="images/Petslogo.png" alt="PetsLogo" title="PetsLogo"></a></p>
+        </header>
+        
+        <nav>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="Sedans.htm">Mid-Range Luxury Sedans</a></li>
+                <li><a href="SUV.htm">Mid-Range Luxury SUV</a></li>
+                <li><a href="coupe.htm">Mid-Range Luxury Coupe</a></li>
+                <li><a href="exotics.htm">Luxury Mid-Range Exotics</a></li>
+                <li><a href="slideshow.html">SlideShow</a></li>
+                <li><a href="ContactUs.htm">Contact Us</a></li>
+                
+            </nav>
+
+            <h2>Mid-Range Luxury Cars SlideShow</h2>
+
+<!-- Here is my slideshow showcasing the finest german engineering -->
+            <body onload=" slideshow()">
+        <img  id="imag" src="images/bmw 3 series.jpg" width="800px" alt="BMW 3" title="BMW 3 Series">
+
+</body>
+
+<footer>
+
+        <ul></ul>
+                <li><a href="sitemap.htm">Sitemap</a></li>
+                <li><a href="ContactUs.htm">Contact us</a></li>
+                <li><a href="credits.htm">Credits</a></li>
+        </footer>
+        
+        
+</body>
+</html>
